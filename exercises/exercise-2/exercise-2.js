@@ -70,3 +70,23 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+function gryffindorHouse (object) {
+  //console.log(object)
+  object.forEach((item) => {
+    if (item.house == "Gryffindor") {
+      console.log(`${item.firstName} ${item.lastName}`);
+    }})
+}
+
+gryffindorHouse(hogwarts)
+
+function teachersWithPets(object) {
+  object.forEach((item) => {
+    if(item.occupation == "Teacher" && item.pet) {
+      console.log(`${item.firstName} ${item.lastName}`)
+    }
+  })
+}
+
+teachersWithPets(hogwarts)
